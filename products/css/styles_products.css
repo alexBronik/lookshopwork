@@ -228,6 +228,9 @@ button {
 a {
   text-decoration: none;
 }
+label {
+  cursor: pointer;
+}
 
 /* ===== lookshop products ===== */
 
@@ -595,6 +598,9 @@ a {
 
 /* main body */
 
+.main-body-container {
+  display: flex;
+}
 .main-body-sale-from-images-block {
   width: 75%;
 }
@@ -795,4 +801,130 @@ a {
 }
 .bottom-block {
   justify-content: flex-end;
+}
+
+/* main body filter block */
+
+.main-body-filter-block {
+  width: 25%;
+  margin-left: 20px;
+}
+.categories-title {
+  background: #000;
+  line-height: 31px;
+  padding-left: 10px;
+  color: #fff;
+  font-family: 'open_sansregular';
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.categories-list-item {
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 7px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.categories-list-item label {
+  position: relative;
+  display: block;
+}
+.categories-list-item-gen {
+display: flex;
+justify-content: space-between;
+position: relative;
+margin-bottom: 8px;
+}
+#categories-list-item-input,
+#categories-list-item-input-designers,
+#categories-list-item-input-women,
+#categories-list-item-input-men,
+#categories-list-item-input-clearance {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.categories-list-item-gen p {
+  color: #727272;
+  font-family: 'open_sansregular';
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.categories-list-item-gen span::before,
+.categories-list-item-gen span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  background: #000;
+}
+.categories-list-item-gen span::before {
+  width: 6px;
+  height: 2px;
+  right: 0;
+}
+.categories-list-item-gen span::after {
+  width: 2px;
+  height: 6px;
+  right: 2px;
+}
+.categories-list-dropdown {
+  padding-left: 6px;
+  display: none;
+}
+.categories-list-item > label:checked + .categories-list-dropdown {
+  display: block;
+}
+#categories-list-item-input:checked + label .categories-list-item-gen span::after,
+#categories-list-item-input-designers:checked + label .categories-list-item-gen span::after,
+#categories-list-item-input-women:checked + label .categories-list-item-gen span::after,
+#categories-list-item-input-men:checked + label .categories-list-item-gen span::after,
+#categories-list-item-input-clearance:checked + label .categories-list-item-gen span::after {
+  display: none;
+}
+#categories-list-item-input:checked ~ .categories-list-dropdown,
+#categories-list-item-input-designers:checked ~ .categories-list-dropdown,
+#categories-list-item-input-women:checked ~ .categories-list-dropdown,
+#categories-list-item-input-men:checked ~ .categories-list-dropdown,
+#categories-list-item-input-clearance:checked ~ .categories-list-dropdown {
+  display: block;
+}
+.categories-list-item-input:checked + .categories-list-item-gen span::after,
+.categories-list-item-input-designers:checked + .categories-list-item-gen span::after,
+.categories-list-item-input-women:checked + .categories-list-item-gen span::after,
+.categories-list-item-input-men:checked + .categories-list-item-gen span::after,
+.categories-list-item-input-clearance:checked + .categories-list-item-gen span::after {
+  display: none;
+}
+.clothes-label input,
+.shoes-label input {
+  display: none;
+}
+.clothes-label,
+.shoes-label {
+  position: relative;
+  color: #333;
+  font-family: 'open_sansregular';
+  font-size: 11px;
+  line-height: 18px;
+}
+.clothes-label span,
+.shoes-label span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fd926d;
+  margin-right: 3px;
+}
+.clothes-label input:checked + span {
+  background-color: #fd926d;
+}
+.shoes-label input:checked + span {
+  background-color: #fd926d;
 }
