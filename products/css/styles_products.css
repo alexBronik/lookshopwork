@@ -241,7 +241,7 @@ label {
   overflow-x: hidden;
 }
 
-/* header */
+/* ----- header ----- */
 
 .headerpart-top-block {
   background: #000;
@@ -447,6 +447,9 @@ label {
 
 /* ----- main ----- */
 
+.main-wrapper {
+  margin-bottom: 30px;
+}
 .work-block {
   width: 100%;
   max-width: 990px;
@@ -1052,4 +1055,141 @@ margin-bottom: 8px;
   text-transform: uppercase;
   display: block;
   padding-top: 10px;
+}
+
+/* ----- footer ------ */
+
+/* banking systems */
+
+.banking-systems-wrapper {
+  background: #f7f7f7;
+  padding: 19px 0;
+  text-align: center;
+}
+.banking-systems-block {
+  color: rgba(65, 65, 65, 0.5);
+  font-family: 'open_sansregular';
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+.banking-systems-list {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.banking-systems-list li {
+  margin: 0 5px;
+}
+
+/* footer menu */
+
+.footer-menu-wrapper {
+  background: #ededed;
+  padding: 33px 0 42px;
+}
+.footer-menu-container {
+  width: 100%;
+  max-width: 990px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.title-styles {
+  color: #544f4d;
+  font-family: 'open_sansbold';
+  font-size: 16px;
+  font-weight: 400; 
+  margin-bottom: 15px;
+}
+.link-item-styles {
+  color: rgba(84, 79, 77, 0.7);
+  font-family: 'open_sansregular';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.social-networks-list {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.social-network-link {
+  display: inline-block;
+  width: 35px;
+  height: 34px;
+  background: url('../img/css_sprites.png');
+  margin-bottom: 9px;
+}
+.twitter-styles {
+ background-position: -65px -64px;
+}
+.pinterest-styles {
+  background-position: -10px -64px;
+}
+.facebook-styles {
+  background-position: -10px -10px;
+}
+.google-styles {
+  background-position: -65px -10px;
+}
+.twitter-t-styles {
+  background-position: -120px -10px;
+}
+.vimeo-styles {
+  background-position: -120px -64px;
+}
+.secured-point-block {
+  padding-top: 20px;
+}
+.secured-point-block span {
+  display: inline-block;
+  width: 107px;
+  height: 107px;
+  background: url('../img/hundred-percent-secured.png') 0 no-repeat;
+}
+
+/* footer conditions */
+
+.footer-conditions-wrapper {
+  background: #000;
+  padding: 24px 0;
+}
+.footer-conditions-container {
+  width: 100%;
+  max-width: 1010px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.conditions-list {
+  display: flex;
+}
+.conditions-list li {
+  border-right: 1px solid #8d8d8d;
+  font-size: 0;
+}
+.conditions-list li:last-child {
+  border-right: none;
+}
+.conditions-list a {
+  color: #8d8d8d;
+  font-family: 'open_sansregular';
+  font-size: 11px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+.all-rights-reserved-block {
+  color: #8d8d8d;
+  font-family: 'open_sansregular';
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: right;
 }
