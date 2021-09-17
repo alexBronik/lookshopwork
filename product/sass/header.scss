@@ -1,0 +1,165 @@
+// product wrapper
+
+$bgBlack: #000;
+$bgWhite: #fff;
+$bgPeach: #fd926d;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-work-box {
+  width: 100%;
+  max-width: 995px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header-container-top {
+  background: $bgBlack;
+}
+
+.header-container-top-block,
+.header-container-bottom-block {
+  justify-content: space-between;
+}
+
+.flex-block {
+  display: flex;
+  align-items: center;
+}
+
+.custom-care {
+  color: $bgWhite;
+  font-family: 'open_sansregular';
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.my-account-box {
+  line-height: 30px;
+  border-right: 1px solid #444;
+}
+
+.country-block {
+  border-left: 1px solid #444;
+  position: relative;
+  padding: 0 14px 0 15px;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  p {
+    margin: 0 10px 0 0;
+  }
+  p,
+  .country-list li {
+    color: $bgWhite;
+    font-family: 'open_sansregular';
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  .country-list {
+    padding: 0 24px 0 15px;
+    white-space: nowrap;
+  }
+  span {
+    border-top: 4px solid $bgWhite;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+  .country-list {
+    display: none;
+  }
+}
+
+.country-block input:checked ~ .country-list {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+  background: $bgBlack;
+  z-index: 1;
+}
+
+.my-account {
+  color: #ffffff;
+  font-family: 'open_sansregular';
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 15px 0 14px;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+
+  img {
+    margin: 0 10px 0 0;
+  }
+}
+
+.search-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+
+  img {
+    width: 100%;
+    padding: 0 10px 0 9px;
+  }
+}
+
+.logo-link img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.navigation-list {
+  margin: 0 24px 0 0;
+  line-height: 106px;
+
+  a {
+    padding: 0 12px 0 0;
+    margin: 0 30px 0 0;
+    position: relative;
+    color: $bgBlack;
+    font-family: 'open_sansregular';
+    font-size: 16px;
+  }
+  a:last-child {
+    margin: 0;
+  }
+  a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-25%);
+    border-top: 4px solid $bgBlack;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+}
