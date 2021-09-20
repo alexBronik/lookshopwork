@@ -1,0 +1,339 @@
+// product wrapper
+
+$bgBlack: #000;
+$bgWhite: #fff;
+$bgPeach: #fd926d;
+$fF: 'open_sansregular';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.main-wrapper {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-work-box {
+  width: 100%;
+  max-width: 995px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.crumbs-block-list {
+  display: flex;
+  line-height: 29px;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  margin: 0 0 24px 0;
+
+  .crumbs-block-list-item a {
+    color: #7a706d;
+    font-family: $fF;
+    font-size: 11px;
+  }
+  .crumbs-block-list-item span {
+    display: inline-block;
+    margin: 0px 6px 0px 1px;
+    width: 5px;
+    height: 5px;
+    border-bottom: 1px solid #7a706d;
+    border-right: 1px solid #7a706d;
+    transform: translateY(-2px) rotate(-45deg) skew(15deg, 15deg);
+  }
+}
+
+.sofi-blouse-container-block {
+  display: flex;
+}
+
+.sofi-blouse-block-left {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 29px 38px 0;
+
+  .sofi-blouse-box-top {
+    width: 100%;
+    margin: 0 0 12px 0;
+
+    img {
+      width: 100%;
+    }
+  }
+  .sofi-blouse-box-bottom-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .sofi-blouse-box-bottom-list-item {
+      width: 25%;
+      max-width: 90px;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        margin: 0;
+        z-index: 1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.sofi-blouse-block-right {
+  width: calc(100% - 429px);
+  margin: 0 0 38px 0;
+}
+
+.back-to-women’s-clothing-box {
+  line-height: 39px;
+  border-bottom: 1px solid #d6d6d6;
+  margin: 0 0 19px 0;
+
+  a {
+    color: #8f8f8f;
+    font-family: $fF;
+    font-size: 12px;
+
+    .left-arrow {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-left: 3px solid rgba(0,0,0,0.2);
+      border-bottom: 3px solid rgba(0,0,0,0.2);
+      transform: rotate(45deg);
+    }
+    .peach-color {
+      color: $bgPeach;
+    }
+  }
+}
+
+.sofi-blouse-description-box {
+  margin: 0 0 24px 0;
+}
+
+.sofi-blouse-description-title {
+  color: #4a4a4a;
+  font-family: 'open_sanssemibold';
+  font-size: 24px;
+  margin: 0 0 30px 0;
+}
+
+.sofi-blouse-description-price-and-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 30px 0;
+
+  .sofi-blouse-description-price {
+    color: $bgPeach;
+    font-family: 'open_sansbold';
+    font-size: 36px;
+  }
+  .sofi-blouse-description-reviews {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #8f8f8f;
+      font-family: $fF;
+      font-size: 12px;
+      margin: 0 16px 0 0;
+    }
+    .reviews-point-list {
+      display: flex;
+
+      li {
+        width: 9px;
+        height: 9px;
+        background: $bgBlack;
+        margin: 0 1px;
+      }
+      li:nth-child(4) {
+        background: linear-gradient(90deg, $bgBlack 55%, #d1d1d1 45%);
+      }
+      li:nth-child(5) {
+        background: #d1d1d1;
+      }
+    }
+  }
+}
+
+.sofi-blouse-description {
+  color: #8f8f8f;
+  font-family: $fF;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 0 24px 0;
+}
+
+.flexfull-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.size-filter-box {
+  padding: 9px 0;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  margin: 0 0 24px 0;
+}
+
+.select-size-block {
+  width: 190px;
+  padding: 0 0 0 8px;
+  line-height: 31px;
+  background: #f4f4f4;
+  position: relative;
+
+  p {
+    color: #4d4d4d;
+    font-family: $fF;
+    font-size: 12px;
+  }
+  span {
+    display: inline-block;
+    width: 29px;
+    height: 31px;
+    background: #e5e5e5;
+    position: relative;
+  }
+  span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border-top: 4px solid #6a6a6a;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .select-size-block-body {
+    display: none;
+  }
+  input:checked ~ .select-size-block-body {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #f4f4f4;
+    
+    p {
+      padding: 0 0 0 8px;
+      text-transform: uppercase;
+    }
+    p:hover {
+      background: #e5e5e5;
+    }
+  }
+}
+
+.color-point-list {
+  display: flex;
+
+  li {
+    width: 29px;
+    height: 31px;
+    margin: 0 1px;
+  }
+  li:nth-child(1) {
+    background: #efebe2;
+  }
+  li:nth-child(2) {
+    background: #c9c1c6;
+  }
+  li:nth-child(3) {
+    background: #b29b88;
+  }
+  li:nth-child(4) {
+    background: #968886;
+  }
+  li:nth-child(5) {
+    background: #cde0ef;
+  }
+}
+
+.add-to-cart-box {
+  display: flex;
+
+  .number-box {
+    margin: 0 5px 0 0;
+    display: flex;
+
+    button {
+      width: 47px;
+      height: 47px;
+      background: $bgPeach;
+      border: none;
+      box-shadow: 0 3px 0 #dd6b44;
+      padding: 0;
+    }
+    button::before,
+    button::after {
+      content: '';
+      display: block;
+      background: $bgWhite;
+    }
+    button::before {
+      width: 1px;
+      height: 7px;
+      margin-left: 23px;
+    }
+    button::after {
+      width: 7px;
+      height: 1px;
+      margin-left: 23px;
+    }
+    input {
+      width: 47px;
+      height: 50px;
+      background: #feb298;
+      border: none;
+      outline: none;
+      padding: 0;
+      text-align: center;
+      color: $bgWhite;
+    }
+    input[type='number'] {
+      -moz-appearance: textfield;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}
