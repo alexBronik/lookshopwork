@@ -540,11 +540,11 @@ button {
     .add-to-cart-box .number-box button::before {
       width: 1px;
       height: 7px;
-      margin-left: 23px; }
+      margin: 0 0 -4px 23px; }
     .add-to-cart-box .number-box button::after {
       width: 7px;
       height: 1px;
-      margin-left: 23px; }
+      margin: 0 0 3px 20px; }
     .add-to-cart-box .number-box input {
       width: 47px;
       height: 50px;
@@ -559,5 +559,28 @@ button {
     .add-to-cart-box .number-box input::-webkit-outer-spin-button,
     .add-to-cart-box .number-box input::-webkit-inner-spin-button {
       -webkit-appearance: none; }
+  .add-to-cart-box .add-to-cart-btn {
+    width: 157px;
+    height: 47px;
+    box-shadow: 0 3px 0 #dd6b44;
+    background: #fd926d;
+    border: none;
+    padding: 0 0 4px 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff; }
+  .add-to-cart-box .add-to-cart-btn::before,
+  .add-to-cart-box .add-to-cart-btn::after {
+    content: '';
+    display: block;
+    background: #fff; }
+  .add-to-cart-box .add-to-cart-btn::before {
+    width: 3px;
+    height: 11px;
+    transform: translate(112px, 12px); }
+  .add-to-cart-box .add-to-cart-btn::after {
+    width: 11px;
+    height: 3px;
+    transform: translate(108px, -11px); }
 
 /*# sourceMappingURL=styles.css.map */

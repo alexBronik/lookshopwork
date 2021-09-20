@@ -311,12 +311,12 @@ button {
     button::before {
       width: 1px;
       height: 7px;
-      margin-left: 23px;
+      margin: 0 0 -4px 23px;
     }
     button::after {
       width: 7px;
       height: 1px;
-      margin-left: 23px;
+      margin: 0 0 3px 20px;
     }
     input {
       width: 47px;
@@ -335,5 +335,32 @@ button {
     input::-webkit-inner-spin-button {
       -webkit-appearance: none;
     }
+  }
+  .add-to-cart-btn {
+    width: 157px;
+    height: 47px;
+    box-shadow: 0 3px 0 #dd6b44;
+    background: $bgPeach;
+    border: none;
+    padding: 0 0 4px 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $bgWhite;
+  }
+  .add-to-cart-btn::before,
+  .add-to-cart-btn::after {
+    content: '';
+    display: block;
+    background: $bgWhite;
+  }
+  .add-to-cart-btn::before {
+    width: 3px;
+    height: 11px;
+    transform: translate(112px, 12px);
+  }
+  .add-to-cart-btn::after {
+    width: 11px;
+    height: 3px;
+    transform: translate(108px, -11px);
   }
 }
