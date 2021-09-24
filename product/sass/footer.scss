@@ -1,0 +1,154 @@
+// product wrapper
+
+$bgBlack: #000;
+$bgWhite: #fff;
+$bgPeach: #fd926d;
+$fF: 'open_sansregular';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.footer-wrapper {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-work-box {
+  width: 100%;
+  max-width: 995px;
+  padding: 0 10px;
+}
+
+.footer-container-top {
+  height: 58px;
+  background: #f7f7f7;
+  width: 100%;
+  position: relative;
+}
+
+.payment-card-block {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .we-accept {
+    color: rgba(65, 65, 65, 0.5);
+    font-family: $fF;
+    font-size: 12px;
+    margin: 0 10px 0 0;
+  }
+  .payment-card-list {
+    display: flex;
+    align-items: center;
+
+    .payment-card-list-item {
+      margin: 0 5px;
+    }
+  }
+}
+
+.footer-container-middle {
+  background: #ededed;
+  padding: 33px 0 35px 0;
+}
+
+.footer-main-list-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-list-title,
+.footer-sociallist-title {
+  margin: 0 0 16px 0;
+  color: #544f4d;
+  font-family: 'open_sansbold';
+  font-size: 16px;
+}
+
+.footer-middle-list-item a {
+  color: rgba(84, 79, 77, 0.7);
+  font-family: $fF;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer-sociallist-title {
+  margin: 0 0 20px 0;
+}
+
+.footer-middle-sociallist {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .footer-middle-sociallist-item {
+    margin: 0 0 10px 0;
+  }
+}
+
+.quality-icon {
+  margin: 20px 0 0 0;
+}
+
+.footer-container-bottom {
+  background: $bgBlack;
+  padding: 24px 0;
+}
+
+.footer-main-basement-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .basement-list {
+    display: flex;
+
+    .basement-list-item {
+      border-right: 1px solid #8d8d8d;
+      font-size: 0;
+
+      a {
+        padding: 0 10px;
+        color: #8d8d8d;
+        font-family: $fF;
+        font-size: 11px;
+      }
+    }
+    .basement-list-item:last-child {
+      border-right: none;
+    }
+    .basement-list-item:first-child a {
+      padding: 0 10px 0 0;
+    }
+  }
+  .all-rights-reserved-block {
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+
+    p {
+      color: #8d8d8d;
+      font-family: $fF;
+      font-size: 11px;
+    }
+  }
+}
