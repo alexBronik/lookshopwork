@@ -1,51 +1,404 @@
-/*
-Error: File to import not found or unreadable: header.scss.
-       Load path: C:/Users/user/Documents/Alex study/LookShop/768/sass
-        on line 3 of C:\Users\user\Documents\Alex study\LookShop\768\sass\styles.scss
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-1: @import 'reset.scss';
-2: @import 'fonts.scss';
-3: @import 'header.scss';
-4: @import 'main.scss';
-5: @import 'footer.scss';
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-Backtrace:
-C:\Users\user\Documents\Alex study\LookShop\768\sass\styles.scss:3
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: header.scss.\A        Load path: C:/Users/user/Documents/Alex study/LookShop/768/sass\A         on line 3 of C:\Users\user\Documents\Alex study\LookShop\768\sass\styles.scss\A \A 1: @import 'reset.scss';\A 2: @import 'fonts.scss';\A 3: @import 'header.scss';\A 4: @import 'main.scss';\A 5: @import 'footer.scss';"; }
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  min-height: 100%;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+button,
+input {
+  margin: 0;
+  padding: 0;
+  cursor: pointer; }
+
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on June 30, 2021 */
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("../css/fonts/opensans/opensans-bold-webfont.eot");
+  src: url("../css/fonts/opensans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans/opensans-bold-webfont.woff2") format("woff2"), url("../css/fonts/opensans/opensans-bold-webfont.woff") format("woff"), url("../css/fonts/opensans/opensans-bold-webfont.ttf") format("truetype"), url("../css/fonts/opensans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansbold_italic';
+  src: url("../css/fonts/opensans/opensans-bolditalic-webfont.eot");
+  src: url("../css/fonts/opensans/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans/opensans-bolditalic-webfont.woff2") format("woff2"), url("../css/fonts/opensans/opensans-bolditalic-webfont.woff") format("woff"), url("../css/fonts/opensans/opensans-bolditalic-webfont.ttf") format("truetype"), url("../css/fonts/opensans/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansextrabold';
+  src: url("../css/fonts/opensans/opensans-extrabold-webfont.eot");
+  src: url("../css/fonts/opensans/opensans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans/opensans-extrabold-webfont.woff2") format("woff2"), url("../css/fonts/opensans/opensans-extrabold-webfont.woff") format("woff"), url("../css/fonts/opensans/opensans-extrabold-webfont.ttf") format("truetype"), url("../css/fonts/opensans/opensans-extrabold-webfont.svg#open_sansextrabold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url("../css/fonts/opensans/opensans-italic-webfont.eot");
+  src: url("../css/fonts/opensans/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans/opensans-italic-webfont.woff2") format("woff2"), url("../css/fonts/opensans/opensans-italic-webfont.woff") format("woff"), url("../css/fonts/opensans/opensans-italic-webfont.ttf") format("truetype"), url("../css/fonts/opensans/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sanslight';
+  src: url("../css/fonts/opensans/opensans-light-webfont.eot");
+  src: url("../css/fonts/opensans/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans/opensans-light-webfont.woff2") format("woff2"), url("../css/fonts/opensans/opensans-light-webfont.woff") format("woff"), url("../css/fonts/opensans/opensans-light-webfont.ttf") format("truetype"), url("../css/fonts/opensans/opensans-light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sanslight_italic';
+  src: url("../css/fonts/opensans/opensans-lightitalic-webfont.eot");
+  src: url("../css/fonts/opensans/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans/opensans-lightitalic-webfont.woff2") format("woff2"), url("../css/fonts/opensans/opensans-lightitalic-webfont.woff") format("woff"), url("../css/fonts/opensans/opensans-lightitalic-webfont.ttf") format("truetype"), url("../css/fonts/opensans/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../css/fonts/opensans/opensans-regular-webfont.eot");
+  src: url("../css/fonts/opensans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans/opensans-regular-webfont.woff2") format("woff2"), url("../css/fonts/opensans/opensans-regular-webfont.woff") format("woff"), url("../css/fonts/opensans/opensans-regular-webfont.ttf") format("truetype"), url("../css/fonts/opensans/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url("../css/fonts/opensans/opensans-semibold-webfont.eot");
+  src: url("../css/fonts/opensans/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans/opensans-semibold-webfont.woff2") format("woff2"), url("../css/fonts/opensans/opensans-semibold-webfont.woff") format("woff"), url("../css/fonts/opensans/opensans-semibold-webfont.ttf") format("truetype"), url("../css/fonts/opensans/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sanssemibold_italic';
+  src: url("../css/fonts/opensans/opensans-semibolditalic-webfont.eot");
+  src: url("../css/fonts/opensans/opensans-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans/opensans-semibolditalic-webfont.woff2") format("woff2"), url("../css/fonts/opensans/opensans-semibolditalic-webfont.woff") format("woff"), url("../css/fonts/opensans/opensans-semibolditalic-webfont.ttf") format("truetype"), url("../css/fonts/opensans/opensans-semibolditalic-webfont.svg#open_sanssemibold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on August 31, 2021 */
+@font-face {
+  font-family: 'open_sans_condensedbold';
+  src: url("../css/fonts/opensans_condensed/opensanscondensed-bold-webfont.eot");
+  src: url("../css/fonts/opensans_condensed/opensanscondensed-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans_condensed/opensanscondensed-bold-webfont.woff2") format("woff2"), url("../css/fonts/opensans_condensed/opensanscondensed-bold-webfont.woff") format("woff"), url("../css/fonts/opensans_condensed/opensanscondensed-bold-webfont.ttf") format("truetype"), url("../css/fonts/opensans_condensed/opensanscondensed-bold-webfont.svg#open_sans_condensedbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans_condensedlight';
+  src: url("../css/fonts/opensans_condensed/opensanscondensed-light-webfont.eot");
+  src: url("../css/fonts/opensans_condensed/opensanscondensed-light-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans_condensed/opensanscondensed-light-webfont.woff2") format("woff2"), url("../css/fonts/opensans_condensed/opensanscondensed-light-webfont.woff") format("woff"), url("../css/fonts/opensans_condensed/opensanscondensed-light-webfont.ttf") format("truetype"), url("../css/fonts/opensans_condensed/opensanscondensed-light-webfont.svg#open_sans_condensedlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans_condensedLtIt';
+  src: url("../css/fonts/opensans_condensed/opensanscondensed-lightitalic-webfont.eot");
+  src: url("../css/fonts/opensans_condensed/opensanscondensed-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/opensans_condensed/opensanscondensed-lightitalic-webfont.woff2") format("woff2"), url("../css/fonts/opensans_condensed/opensanscondensed-lightitalic-webfont.woff") format("woff"), url("../css/fonts/opensans_condensed/opensanscondensed-lightitalic-webfont.ttf") format("truetype"), url("../css/fonts/opensans_condensed/opensanscondensed-lightitalic-webfont.svg#open_sans_condensedLtIt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.header-work-block {
+  max-width: 995px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; }
+
+.header-top-container {
+  background: #000; }
+  .header-top-container .header-top-block {
+    justify-content: space-between; }
+    .header-top-container .header-top-block .custom-care-link {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "open_sansregular";
+      font-size: 12px; }
+    .header-top-container .header-top-block .my-account-block {
+      display: flex;
+      align-items: center;
+      line-height: 30px;
+      border-right: 1px solid #444; }
+      .header-top-container .header-top-block .my-account-block .country-box {
+        border-left: 1px solid #444;
+        position: relative;
+        padding: 0 14px 0 15px;
+        display: flex;
+        align-items: center; }
+        .header-top-container .header-top-block .my-account-block .country-box .country-item {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0; }
+        .header-top-container .header-top-block .my-account-block .country-box .country-name {
+          color: #fff;
+          font-family: "open_sansregular";
+          font-size: 11px;
+          text-transform: uppercase;
+          margin: 0 10px 0 0; }
+        .header-top-container .header-top-block .my-account-block .country-box span {
+          border-top: 4px solid #fff;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent; }
+        .header-top-container .header-top-block .my-account-block .country-box .country-list {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          display: none;
+          background: #000;
+          padding: 0 0 0 15px;
+          cursor: pointer;
+          z-index: 1; }
+          .header-top-container .header-top-block .my-account-block .country-box .country-list li {
+            color: #fff;
+            line-height: 30px;
+            font-family: "open_sansregular";
+            font-size: 11px;
+            text-transform: uppercase; }
+        .header-top-container .header-top-block .my-account-block .country-box .country-item:checked ~ .country-list {
+          display: block; }
+      .header-top-container .header-top-block .my-account-block .my-account-link {
+        padding: 0 15px 0 14px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "open_sansregular";
+        font-size: 11px;
+        border-left: 1px solid #444;
+        border-right: 1px solid #444; }
+        .header-top-container .header-top-block .my-account-block .my-account-link img {
+          margin: 0 7px 0 0;
+          transform: translateY(2px); }
+      .header-top-container .header-top-block .my-account-block .search-button {
+        border: none;
+        background: transparent;
+        padding: 0;
+        line-height: 30px; }
+        .header-top-container .header-top-block .my-account-block .search-button img {
+          width: 100%;
+          padding: 0 10px 0 9px;
+          transform: translateY(3px); }
+
+.header-bottom-block {
+  justify-content: space-between;
+  padding: 20px 10px;
+  flex-wrap: wrap; }
+
+.logo {
+  flex-grow: 1; }
+
+.navigation-list a {
+  color: #000;
+  font-family: "open_sansregular";
+  font-size: 16px;
+  position: relative;
+  padding: 0 13px 0 0;
+  margin: 0 30px 0 0; }
+
+.navigation-list a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-25%);
+  border-top: 4px solid #000;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent; }
+
+.Your-cart-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px 0 9px;
+  width: 214px;
+  line-height: 33px;
+  border: 1px solid #d6d6d6;
+  position: relative; }
+  .Your-cart-box .Your-cart-item {
+    color: #949393;
+    font-family: "open_sansregular";
+    font-size: 12px; }
+  .Your-cart-box .drop-down {
+    border-top: 4px solid #c1c1c1;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; }
+  .Your-cart-box input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .Your-cart-box .cart-list {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    right: -1px;
+    display: none;
+    z-index: 1;
+    background: #fff;
+    border: 1px solid #d6d6d6; }
+    .Your-cart-box .cart-list .cart-list-item {
+      line-height: 33px;
+      color: #949393;
+      font-family: "open_sansregular";
+      font-size: 12px;
+      padding: 0 0 0 9px;
+      cursor: pointer; }
+    .Your-cart-box .cart-list .cart-list-item:hover {
+      background: #fafafa; }
+
+.Your-cart-box input:checked ~ .cart-list {
+  display: block; }
+
+.basket-box {
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  background: #fafafa;
+  padding: 0 13px 0 10px;
+  line-height: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .basket-box a {
+    transform: translateY(3px); }
+  .basket-box .basket-description {
+    color: #949393;
+    font-family: "open_sansregular";
+    font-size: 11px;
+    text-transform: uppercase; }
+
+.header-tablet-nav-menu-block {
+  display: none;
+  height: 48px;
+  background: #fd926d;
+  position: relative;
+  width: 100%; }
+  .header-tablet-nav-menu-block #ckeck-menu {
+    display: none; }
+  .header-tablet-nav-menu-block .menu-title {
+    color: #fff;
+    font-family: "open_sansregular";
+    font-size: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    padding: 16px; }
+  .header-tablet-nav-menu-block .burger-line {
+    position: absolute;
+    top: 14px;
+    right: 17px;
+    width: 22px;
+    height: 4px;
+    border-radius: 100px 100px 100px 100px;
+    background: #fff;
+    transition: all 0.5s ease; }
+  .header-tablet-nav-menu-block .second,
+  .header-tablet-nav-menu-block .third {
+    top: 22px; }
+  .header-tablet-nav-menu-block .fourth {
+    top: 30px; }
+  .header-tablet-nav-menu-block .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background: #fd926d;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease; }
+  .header-tablet-nav-menu-block .nav-menu a {
+    color: #000;
+    font-family: "open_sansregular";
+    font-size: 16px;
+    position: relative;
+    display: block;
+    line-height: 30px;
+    padding: 0 20px 0 0; }
+  .header-tablet-nav-menu-block .nav-menu a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-25%);
+    border-top: 4px solid transparent;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid transparent; }
+
+#ckeck-menu:checked ~ .nav-menu {
+  max-height: 150px;
+  font-size: 16px; }
+
+#ckeck-menu:checked ~ .first {
+  display: none; }
+
+#ckeck-menu:checked ~ .fourth {
+  display: none; }
+
+#ckeck-menu:checked ~ .second {
+  transform: rotate(45deg); }
+
+#ckeck-menu:checked ~ .third {
+  transform: rotate(-45deg); }
+
+@media screen and (max-width: 768px) {
+  .header-work-block {
+    max-width: 760px;
+    padding: 0 15px; }
+
+  .header-bottom-block {
+    padding: 20px 15px 17px; }
+
+  .navigation-list {
+    display: none; }
+
+  .cart-basket-block {
+    margin: 0 0 20px 0; }
+
+  .header-tablet-nav-menu-block {
+    display: block; } }
+
+/*# sourceMappingURL=styles.css.map */
