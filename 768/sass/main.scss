@@ -1,0 +1,666 @@
+$bgBlack: #000;
+$bgWhite: #fff;
+$bgPeach: #fd926d;
+$fF: 'open_sansregular';
+
+main {
+  min-height: 100%;
+}
+
+.main-work-block {
+  max-width: 995px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+// main
+
+// slider
+
+.slider-wrapper {
+  background: #f6f3ec;
+
+  .slider-container {
+    max-width: 1204px;
+    margin: 0 auto;
+    position: relative;
+
+    .slider-box {
+      justify-content: space-between;
+      
+      .crazy-summer-block {
+        margin: 0 0 0 69px;
+        text-align: center;
+        font-size: 0;
+
+        .slider-img-left {
+          width: 100%;
+          margin: 0 0 12px 0;
+        }
+        .crazy-summer-icon-title {
+          color: #78645d;
+          font-family: 'open_sans_condensedlight';
+          font-size: 36px;
+          text-transform: uppercase;
+          margin: 0 0 18px 0;
+        }
+        .shop-now-link {
+          border-bottom: 3px solid #dd6b44;
+          background: $bgPeach;
+          color: $bgWhite;
+          text-transform: uppercase;
+          padding: 20px 49px 20px 23px;
+          font-family: $fF;
+          font-size: 16px;
+          display: inline-block;
+          position: relative;
+        }
+        .shop-now-link::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 24px;
+          transform: translateY(-50%);
+          border-left: 4px solid $bgWhite;
+          border-top: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+        }
+      }
+      .slider-image-block {
+
+        .slider-img-right {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .btn-left,
+  .btn-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 117px;
+    background: #fff;
+    border: none;
+  }
+  .btn-left {
+    left: 0;
+  }  
+  .btn-right {
+    right: 0;
+  }
+  .arrow-left,
+  .arrow-right {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-left: 4px solid rgba(0,0,0,.2);
+    border-bottom: 4px solid rgba(0,0,0,.2);
+  }
+  .arrow-left {
+    transform: rotate(45deg);
+  }
+  .arrow-right {
+    transform: rotate(225deg);
+  }
+}
+
+// bullet area
+
+.bullet-wrapper {
+  padding: 33px 0;
+
+  .bullet-container {
+    max-width: 1204px;
+    text-align: center;
+    font-size: 0;
+    margin: 0 auto;
+
+    .bullet-list {
+      display: inline-flex;
+
+      .bullet-list-item {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 10px;
+        background: #867a76;
+      }
+      .active {
+        background: $bgPeach;
+      }
+    }
+  }  
+}
+
+// email address area
+
+.email-address-networks-wrapper {
+  background: #ededed;
+
+  .email-address-networks-container {
+    justify-content: space-between;
+
+    .email-address-block {
+      display: flex;
+      align-items: center;
+
+      .stay-updated-item {
+        color: #6b6b6b;
+        font-family: $fF;
+        font-size: 12px;
+        margin: 0 10px 0 0;
+      }
+      .email-address-string {
+        padding: 0 9px;
+        line-height: 29px;
+        outline: none;
+        border: none;
+        max-width: 154px;
+      }
+      .email-address-string::placeholder {
+        color: #9f9f9f;
+        font-family: $fF;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: italic;
+      } 
+      .email-btn {
+        width: 28px;
+        height: 29px;
+        border-bottom: 3px solid #dd6b44;
+        background: $bgPeach;
+        position: relative;
+      }
+      .email-btn::before,
+      .email-btn::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $bgWhite;
+      }
+      .email-btn::before {
+        width: 3px;
+        height: 11px;
+      }
+      .email-btn::after {
+        width: 11px;
+        height: 3px;
+      } 
+    }
+    .networks-block {
+      display: flex;
+      align-items: center;
+
+      .networks-block-desc {
+        color: #6c6c6c;
+        font-family: $fF;
+        font-size: 12px;
+        margin: 0 15px 0 0;
+      }
+      .networks-list {
+        display: flex;
+
+        .networks-list-item a {
+          display: inline-block;
+        }
+        .facebook-link {
+          padding: 18px 23px 19px 23px;
+          background: #f7f7f7;
+        }
+        .twitter-link {
+          padding: 19px 17px;
+          background: #ededed;
+        }
+        .pinterest-link {
+          padding: 16px 17px 18px 16px;
+          background: #f7f7f7;
+        }  
+      }
+    }
+  }
+}
+
+// sale board area
+
+.sale-board-container {
+  padding: 40px 10px 50px;
+  font-size: 0;
+
+  .board-part-left,
+  .board-part-right {
+    width: 50%;
+  }
+}
+
+.board-part-left img,
+.top-board-item img,
+.bottom-board-item-left img,
+.bottom-board-item-right img {
+  width: 100%;
+}
+
+.top-board-item,
+.bottom-board-item {
+  width: 100%;
+}
+
+.bottom-board-item {
+  display: flex;
+}
+
+.bottom-board-item-left,
+.bottom-board-item-right {
+  width: 50%;
+}
+
+.board-links-parent {
+  position: relative;
+}
+
+.board-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.board-description-block {
+  position: absolute;
+  top: 50%;
+  right: 43px;
+  transform: translateY(-50%);
+  text-align: center;
+
+  .best-title {
+    color: #414141;
+    font-family: 'open_sans_condensedbold';
+    font-size: 34px;
+    margin: 0 0 11px 0;
+    text-transform: uppercase;
+    line-height: 28px;
+  }
+  .outfits-title {
+    color: #414141;
+    font-family: 'open_sans_condensedlight';
+    font-size: 74px;
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+    line-height: 56px;
+  }
+  .and-delimiter {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: #414141;
+    margin: 0 0 6px 0;
+    color: $bgWhite;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fF;
+    font-size: 22px;
+    position: relative;
+  }
+  .and-delimiter::before,
+  .and-delimiter::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 74px;
+    height: 1px;
+    background: #414141;
+  }
+  .and-delimiter::before {
+    right: 36px;
+  }
+  .and-delimiter::after {
+    left: 36px;
+  }
+  .looks-title {
+    color: #4fafa0;
+    font-family: 'open_sans_condensedbold';
+    font-size: 82px;
+    text-transform: uppercase;
+    line-height: 59px;
+  }
+}
+
+.best-sellers-block {
+  position: absolute;
+  bottom: 15px;
+  left: 27px;
+  display: flex;
+  align-items: center;
+
+  .best-sellers-title {
+    color: $bgWhite;
+    font-family: 'open_sans_condensedlight';
+    font-size: 34px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.19);
+    text-transform: uppercase;
+    margin: 0 5px 0 0;
+  }
+  .arrow-right {
+    border-right: 1px solid $bgWhite;
+    border-bottom: 1px solid $bgWhite;
+    transform: rotate(-45deg);
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.fall-leather-block {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  text-align: center;
+
+  .fall-leather-title {
+    color: $bgWhite;
+    font-family: 'open_sans_condensedlight';
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+    line-height: 31px;
+  }
+  .shop-now-paragraph {
+    color: $bgWhite;
+    font-family: $fF;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    background: #4fafa0;
+    padding: 10px;
+
+    .pars-arrow-right {
+      border-left: 4px solid $bgWhite;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      margin: 0 0 0 9px;
+    }
+  }
+}
+
+// sales roll area
+
+.roll-menu {
+  &-container {
+    justify-content: space-between;
+  }
+
+  &-list {
+    display: flex;
+  }
+   
+  &-list-item {
+    position: relative;
+
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+
+      &:checked {
+        & ~ .roll-menu-link {
+          background: $bgPeach;
+          color: $bgWhite;
+        }
+      }
+    }
+  }
+
+  &-link {
+    padding: 19px 18px;
+    text-transform: uppercase;
+    color: #555;
+    font-family: $fF;
+    font-size: 15px;
+    display: block;
+  }
+}
+
+.choice-buttons-block {
+  display: flex;
+}
+
+.btn-left,
+.btn-right {
+  position: relative;
+}
+
+.radio-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.main-element-left,
+.main-element-right {
+  width: 53px;
+  height: 53px;
+  background: #f2f2f2;
+  position: relative;
+  display: block;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 34%;
+    left: 35%;
+    border-left: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.main-element-left::before {
+  transform: translateX(25%) rotate(45deg);
+}
+
+.main-element-right::before {
+  transform: translateX(-25%) rotate(225deg);
+}
+
+.radio-item:checked ~ .main-element-left,
+.radio-item:checked ~ .main-element-right {
+  background: $bgPeach;
+
+  &::before {
+    border-left: 1px solid $bgWhite;
+    border-bottom: 1px solid $bgWhite;
+  }
+}
+
+.rolls {
+  &-wrapper {
+    background: $bgPeach;
+    height: 455px;
+    position: relative;
+  }
+
+  &-container {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 0 15px;
+  }
+
+  &-block {
+    font-size: 0;
+    margin: 0 15px;
+    width: 220px;
+    height: 395px;
+    position: relative;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+
+      .salepunkt {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.sale-marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  color: $bgWhite;
+  font-family: $fF;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: linear-gradient(-45deg, $bgWhite 50%, #4c4c4c 50%);
+  z-index: 1;
+  padding: 7px 0 0 4px;
+  display: none;
+}
+
+.is-active {
+  display: block;
+}
+
+.image-slide {
+  width: 100%;
+}
+
+.salepunkt {
+  position: absolute;
+  top: 88px;
+  left: 44px;
+  border-radius: 50%;
+  background: #3d3d3d;
+  width: 134px;
+  height: 134px;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+
+  .saledot {
+    color: $bgWhite;
+    font-family: $fF;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: url('../img/Vector_Smart_Object_white.png') 50% 0 no-repeat;
+    padding-top: 35px;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.image-sale-description-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 12px 0 11px 0;
+
+  .description-title {
+    color: #373737;
+    font-family: $fF;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    line-height: 10px;
+  }
+  .price-item {
+    color: #373737;
+    font-family: $fF;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    line-height: 19px;
+  }
+  .button-slide {
+    text-transform: uppercase;
+    width: 120px;
+    height: 32px;
+    color: $bgWhite;
+    background: $bgPeach;
+    border-bottom: 3px solid #dd6b44;
+    font-size: 12px;
+    position: relative;
+    text-align: left;
+    padding-left: 10px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: $bgWhite;
+    }
+
+    &::before {
+      right: 14px;
+      width: 3px;
+      height: 11px;
+    }
+
+    &::after {
+      right: 10px;
+      width: 11px;
+      height: 3px;
+    }
+  }
+}
+
+// clearance area
+
+.clearance {
+  &-container {
+    justify-content: center;
+  }
+
+  &-link-block {
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      background: rgba(178, 178, 178, 0.5);
+      top: 50%;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &-link {
+    display: inline-block;
+    border: 16px solid $bgWhite;
+    position: relative;
+  }
+}

@@ -276,6 +276,7 @@ $fF: 'open_sansregular';
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s ease;
+    z-index: 1;
   }
   .nav-menu a {
     color: $bgBlack;
