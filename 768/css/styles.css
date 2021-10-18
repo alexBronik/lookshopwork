@@ -887,7 +887,7 @@ main {
       height: 3px; }
 
 .clearance-container {
-  justify-content: center; }
+  flex-wrap: wrap; }
 .clearance-link-block {
   padding: 25px 0;
   text-align: center;
@@ -905,5 +905,63 @@ main {
   display: inline-block;
   border: 16px solid #fff;
   position: relative; }
+
+.clearance-images-block {
+  display: flex;
+  margin: 0 0 62px 0; }
+  .clearance-images-block .clearance-image-box {
+    position: relative;
+    height: 395px;
+    width: 220px;
+    margin: 0 15px; }
+
+.favourite-brands-wrapper {
+  position: relative;
+  text-align: center; }
+  .favourite-brands-wrapper::before, .favourite-brands-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: rgba(178, 178, 178, 0.5);
+    height: 1px;
+    width: 100%; }
+  .favourite-brands-wrapper::before {
+    top: 8px; }
+  .favourite-brands-wrapper::after {
+    bottom: 0; }
+.favourite-brands-title {
+  position: relative;
+  padding: 0 20px;
+  background: #fff;
+  text-transform: uppercase;
+  color: #414141;
+  font-family: 'open_sansbold';
+  font-size: 15px;
+  z-index: 1;
+  display: inline-block; }
+.favourite-brands-container {
+  justify-content: space-between; }
+
+.brand-block {
+  line-height: 92px; }
+  .brand-block img {
+    vertical-align: middle; }
+
+.about-lookshop-wrapper {
+  padding: 29px 0 27px; }
+.about-lookshop-container {
+  justify-content: center;
+  flex-wrap: wrap; }
+.about-lookshop-title {
+  color: #414141;
+  font-family: 'open_sanssemibold';
+  font-size: 24px;
+  margin: 0 0 12px 0; }
+.about-lookshop-body {
+  text-align: center;
+  color: #999999;
+  font-family: "open_sansregular";
+  font-size: 14px;
+  line-height: 18px; }
 
 /*# sourceMappingURL=styles.css.map */
