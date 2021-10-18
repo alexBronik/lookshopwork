@@ -1,0 +1,195 @@
+$bgBlack: #000;
+$bgWhite: #fff;
+$bgPeach: #fd926d;
+$fF: 'open_sansregular';
+
+footer {
+  min-height: 100%;
+}
+
+.footer-work-block {
+  max-width: 995px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+// footer
+
+// banking system area
+
+.banking-system {
+  &-wrapper {
+    background: #f7f7f7;
+    padding: 19px 0 17px;
+  }
+
+  &-container {
+    justify-content: center;
+  }
+
+  &-block {
+    display: flex;
+    align-items: center;
+
+    .we-accept {
+      margin: 0 10px 0 0;
+      color: rgba(65, 65, 65, 0.5);
+      font-family: $fF;
+      font-size: 12px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      margin: 0 5px;
+    }
+  }
+}  
+
+// footer menu area
+
+.footer-menu {
+  &-wrapper {
+    background: #ededed;
+    padding: 33px 0 35px;
+  }
+
+  &-container {
+    align-items: flex-start;
+  }
+
+  &-block-left,
+  &-block-right {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-block-left {
+    width: 66.66%;
+    padding: 0 30px 0 0;
+  }
+
+  &-block-right {
+    width: 33.33%;
+    padding: 0 0 0 30px;
+  }
+}
+
+.title-styles {
+  color: #544f4d;
+  font-family: 'open_sansbold';
+  font-size: 16px;
+  margin: 0 0 13px 0;
+}
+
+.link-item-styles {
+  color: rgba(84, 79, 77, 0.7);
+  font-family: $fF;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.social-title {
+  margin: 0 0 13px 0;
+}
+
+.social-networks-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 135px;
+
+  &-item {
+    margin: 5px;
+  }
+}
+
+.secured-point-block {
+  &-item {
+    display: inline-block;
+    padding: 15px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .footer-work-block {
+    max-width: 760px;
+    padding: 0 15px;
+  }
+  
+  .footer-menu {
+    &-block-left,
+    &-block-right {
+      width: 50%;
+    }
+
+    &-block-left {
+      flex-wrap: wrap;
+    }
+  }
+
+  .stores-block {
+    margin: 0 44px 0 0;
+  }
+
+  .customer-service-block {
+    margin: 0 0 35px 0;
+  }
+}
+
+// footer basement area
+
+.footer-basement {
+  &-wrapper {
+    background: $bgBlack;
+    padding: 24px 0;
+  }
+
+  &-container {
+    justify-content: space-between;
+  }
+}
+
+.condition-list {
+  display: flex;
+  align-items: center;
+
+  &-item {
+    border-right: 1px solid #8d8d8d;
+    font-size: 0;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    a {
+      color: #8d8d8d;
+      font-family: $fF;
+      font-size: 11px;
+      padding: 0 10px;
+    }
+  }
+}
+
+#link-without-padding {
+  padding-left: 0;
+}
+
+.all-rights-reserved-block {
+  text-align: right;
+
+  p {
+    color: #8d8d8d;
+    font-family: $fF;
+    font-size: 11px;
+  }
+}
+
+.lookshop-com {
+  margin: 0 0 10px 0;
+}
