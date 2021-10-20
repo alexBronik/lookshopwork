@@ -133,12 +133,15 @@ footer {
     }
   }
 
-  .stores-block {
-    margin: 0 44px 0 0;
-  }
-
   .customer-service-block {
     margin: 0 0 35px 0;
+  }
+
+  .customer-service-block,
+  .information-block,
+  .campaigns-block,
+  .stores-block {
+    width: 50%;
   }
 }
 
