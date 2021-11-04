@@ -115,6 +115,38 @@ footer {
   }
 }
 
+// footer basement area
+
+.footer-basement {
+  &-wrapper {
+    background: $bgBlack;
+  }
+
+  &-container {
+    flex-wrap: wrap;
+  }
+}
+
+.basement-desktop,
+.basement-mobile {
+  width: 100%;
+}
+
+.basement-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.basement-mobile {
+  display: none;
+}
+
+.mobile-menu-burger {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
 
   .footer-work-block {
@@ -150,7 +182,6 @@ footer {
 .footer-basement {
   &-wrapper {
     background: $bgBlack;
-    padding: 24px 0;
   }
 
   &-container {
@@ -158,7 +189,8 @@ footer {
   }
 }
 
-.condition-list {
+.condition-list,
+.condition-list-mobile {
   display: flex;
   align-items: center;
 
@@ -177,6 +209,15 @@ footer {
       padding: 0 10px;
     }
   }
+
+  .basement-mobile {
+    display: none;
+  }
+
+  .mobile-menu-burger {
+    display: none;
+  }
+
 }
 
 #link-without-padding {
@@ -195,4 +236,104 @@ footer {
 
 .lookshop-com {
   margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 640px) {
+  
+  .banking-system-wrapper {
+    display: none;
+  }
+
+  .footer-menu-wrapper {
+    display: none;
+  }
+
+  .footer-basement-container {
+    position: relative;
+  }
+
+  .basement-desktop {
+    padding: 24px 15px;
+  }
+
+  .condition-list {
+    display: none;
+  }
+
+  .all-rights-reserved-block p {
+    font-size: 24px;
+  }
+
+  .mobile-menu-burger {
+    display: block;
+  }
+
+  .basement-label {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 33px;
+    cursor: pointer;
+  }
+
+  .burger-line-b {
+    display: block;
+    width: 32px;
+    height: 6px;
+    right: 30px;
+    border-radius: 100px 100px 100px 100px;
+    background: $bgWhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+  }
+
+  .second-b,
+  .third-b {
+    top: 12px;
+  }
+
+  .fourth-b {
+    top: 24px;
+  }
+
+  .basement-mobile {
+    display: flex;
+    max-height: 0;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    background: $bgBlack;
+    transition: all 0.5s ease;
+  }
+
+  .condition-list-mobile {
+    display: flex;
+  }
+
+  #basement-checkbox {
+    &:checked {
+      & ~ .basement-mobile {
+        max-height: 100px;
+        padding: 24px 0;
+      }
+
+      & ~ .basement-label .first-b,
+      & ~ .basement-label .fourth-b {
+        display: none;
+      }
+
+      & ~ .basement-label .second-b {
+        transform: rotate(45deg);
+      }
+
+      & ~ .basement-label .third-b {
+        transform: rotate(-45deg);
+      }
+    }
+  }
 }

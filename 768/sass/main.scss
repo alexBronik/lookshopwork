@@ -698,13 +698,13 @@ main {
 .clearance-images-block {
   display: flex;
   margin: 0 0 62px 0;
+}
 
-  .clearance-image-box {
-    position: relative;
-    height: 395px;
-    width: 220px;
-    margin: 0 15px;
-  }
+.clearance-image-box {
+  position: relative;
+  height: 395px;
+  width: 220px;
+  margin: 0 15px;
 }
 
 // favourite brands area
@@ -787,6 +787,10 @@ main {
 }
 
 .roll-menu-container-mobile {
+  display: none;
+}
+
+.load-button {
   display: none;
 }
 
@@ -942,12 +946,15 @@ main {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 15px 0 15px 30px;
     background: #fd926d;
     transition: all 1.3s ease;
     z-index: 1;
     max-height: 0;
     overflow: hidden;
+
+    &-item {
+      padding: 0 45px 0 30px;
+    }
 
     &-item a {
       display: block;
@@ -955,7 +962,7 @@ main {
       font-family: $fF;
       color: $bgWhite;
       text-transform: uppercase;
-      line-height: 55px;
+      line-height: 58px;
       position: relative;
 
       &::after {
@@ -963,7 +970,7 @@ main {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 45px;
+        right: 0;
         border-top: 10px solid transparent;
         border-left: 10px solid $bgWhite;
         border-bottom: 10px solid transparent;
@@ -973,5 +980,96 @@ main {
 
   #ckeck-menu-mobile:checked ~ .menu-mobile-list {
     max-height: 300px;
+    
+  }
+
+  .rolls-wrapper {
+    position: static;
+    height: 675px;
+    padding-top: 33px;
+  }
+
+  .rolls-container {
+    position: static;
+    margin: 0 auto;
+    max-width: 580px;
+    padding: 0;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    overflow: hidden;
+    margin: 0 0 29px 0;
+  }
+
+  .rolls-block {
+    height: 524px;
+    width: 274px;
+  }
+
+  .image-slide {
+    width: 274px;
+  }
+
+  .salepunkt {
+    display: none;
+  }
+
+  .is-active {
+    display: none;
+  }  
+
+  .image-sale-description-block {
+    height: 162px;
+  }
+
+  .description-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .price-item {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+
+
+
+
+  .load-button {
+    display: block;
+    width: 220px;
+    height: 60px;
+    margin: 0 auto;
+    color: $bgWhite;
+    text-transform: uppercase;
+    background: $bgBlack;
+    font-size: 20px;
+    font-family: $fF;
+  }
+
+  .clearance {
+    &-container {
+      overflow: hidden;
+    }
+
+    &-link-block {
+      padding: 9px 0;
+    }
+
+    &-image-box {
+      width: 274px;
+    }
+  }
+
+
+
+
+
+  .favourite-brands-wrapper {
+    display: none;
+  }
+
+  .about-lookshop-wrapper {
+    display: none;
   }
 }

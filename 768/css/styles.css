@@ -1071,11 +1071,12 @@ main {
 .clearance-images-block {
   display: flex;
   margin: 0 0 62px 0; }
-  .clearance-images-block .clearance-image-box {
-    position: relative;
-    height: 395px;
-    width: 220px;
-    margin: 0 15px; }
+
+.clearance-image-box {
+  position: relative;
+  height: 395px;
+  width: 220px;
+  margin: 0 15px; }
 
 .favourite-brands-wrapper {
   position: relative;
@@ -1127,6 +1128,9 @@ main {
   line-height: 18px; }
 
 .roll-menu-container-mobile {
+  display: none; }
+
+.load-button {
   display: none; }
 
 @media screen and (max-width: 640px) {
@@ -1244,32 +1248,97 @@ main {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 15px 0 15px 30px;
     background: #fd926d;
     transition: all 1.3s ease;
     z-index: 1;
     max-height: 0;
     overflow: hidden; }
+    .menu-mobile-list-item {
+      padding: 0 45px 0 30px; }
     .menu-mobile-list-item a {
       display: block;
       font-size: 30px;
       font-family: "open_sansregular";
       color: #fff;
       text-transform: uppercase;
-      line-height: 55px;
+      line-height: 58px;
       position: relative; }
       .menu-mobile-list-item a::after {
         content: '';
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 45px;
+        right: 0;
         border-top: 10px solid transparent;
         border-left: 10px solid #fff;
         border-bottom: 10px solid transparent; }
 
   #ckeck-menu-mobile:checked ~ .menu-mobile-list {
-    max-height: 300px; } }
+    max-height: 300px; }
+
+  .rolls-wrapper {
+    position: static;
+    height: 675px;
+    padding-top: 33px; }
+
+  .rolls-container {
+    position: static;
+    margin: 0 auto;
+    max-width: 580px;
+    padding: 0;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    overflow: hidden;
+    margin: 0 0 29px 0; }
+
+  .rolls-block {
+    height: 524px;
+    width: 274px; }
+
+  .image-slide {
+    width: 274px; }
+
+  .salepunkt {
+    display: none; }
+
+  .is-active {
+    display: none; }
+
+  .image-sale-description-block {
+    height: 162px; }
+
+  .description-title {
+    font-size: 18px;
+    margin-bottom: 15px; }
+
+  .price-item {
+    font-size: 27px;
+    margin-bottom: 15px; }
+
+  .load-button {
+    display: block;
+    width: 220px;
+    height: 60px;
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+    font-size: 20px;
+    font-family: "open_sansregular"; }
+
+  .clearance-container {
+    overflow: hidden; }
+  .clearance-link-block {
+    padding: 9px 0; }
+  .clearance-image-box {
+    width: 274px; }
+
+  .favourite-brands-wrapper {
+    display: none; }
+
+  .about-lookshop-wrapper {
+    display: none; } }
 footer {
   min-height: 100%; }
 
@@ -1340,6 +1409,27 @@ footer {
   display: inline-block;
   padding: 15px 0 0 0; }
 
+.footer-basement-wrapper {
+  background: #000; }
+.footer-basement-container {
+  flex-wrap: wrap; }
+
+.basement-desktop,
+.basement-mobile {
+  width: 100%; }
+
+.basement-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0; }
+
+.basement-mobile {
+  display: none; }
+
+.mobile-menu-burger {
+  display: none; }
+
 @media screen and (max-width: 768px) {
   .footer-work-block {
     max-width: 760px;
@@ -1359,24 +1449,33 @@ footer {
   .stores-block {
     width: 50%; } }
 .footer-basement-wrapper {
-  background: #000;
-  padding: 24px 0; }
+  background: #000; }
 .footer-basement-container {
   justify-content: space-between; }
 
-.condition-list {
+.condition-list,
+.condition-list-mobile {
   display: flex;
   align-items: center; }
-  .condition-list-item {
+  .condition-list-item,
+  .condition-list-mobile-item {
     border-right: 1px solid #8d8d8d;
     font-size: 0; }
-    .condition-list-item:last-child {
+    .condition-list-item:last-child,
+    .condition-list-mobile-item:last-child {
       border-right: none; }
-    .condition-list-item a {
+    .condition-list-item a,
+    .condition-list-mobile-item a {
       color: #8d8d8d;
       font-family: "open_sansregular";
       font-size: 11px;
       padding: 0 10px; }
+  .condition-list .basement-mobile,
+  .condition-list-mobile .basement-mobile {
+    display: none; }
+  .condition-list .mobile-menu-burger,
+  .condition-list-mobile .mobile-menu-burger {
+    display: none; }
 
 #link-without-padding {
   padding-left: 0; }
@@ -1390,5 +1489,78 @@ footer {
 
 .lookshop-com {
   margin: 0 0 10px 0; }
+
+@media screen and (max-width: 640px) {
+  .banking-system-wrapper {
+    display: none; }
+
+  .footer-menu-wrapper {
+    display: none; }
+
+  .footer-basement-container {
+    position: relative; }
+
+  .basement-desktop {
+    padding: 24px 15px; }
+
+  .condition-list {
+    display: none; }
+
+  .all-rights-reserved-block p {
+    font-size: 24px; }
+
+  .mobile-menu-burger {
+    display: block; }
+
+  .basement-label {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 33px;
+    cursor: pointer; }
+
+  .burger-line-b {
+    display: block;
+    width: 32px;
+    height: 6px;
+    right: 30px;
+    border-radius: 100px 100px 100px 100px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease; }
+
+  .second-b,
+  .third-b {
+    top: 12px; }
+
+  .fourth-b {
+    top: 24px; }
+
+  .basement-mobile {
+    display: flex;
+    max-height: 0;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    background: #000;
+    transition: all 0.5s ease; }
+
+  .condition-list-mobile {
+    display: flex; }
+
+  #basement-checkbox:checked ~ .basement-mobile {
+    max-height: 100px;
+    padding: 24px 0; }
+  #basement-checkbox:checked ~ .basement-label .first-b, #basement-checkbox:checked ~ .basement-label .fourth-b {
+    display: none; }
+  #basement-checkbox:checked ~ .basement-label .second-b {
+    transform: rotate(45deg); }
+  #basement-checkbox:checked ~ .basement-label .third-b {
+    transform: rotate(-45deg); } }
 
 /*# sourceMappingURL=styles.css.map */
